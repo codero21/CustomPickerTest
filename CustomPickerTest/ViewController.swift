@@ -18,6 +18,15 @@ class ViewController: UIViewController {
     let dataComponent2: [String] = ["Banana", "Orange", "Pear", "Apple", "Pineapple", "Lemon", "Peach"]
     let dataComponent3: [String] = ["Pear", "Peach", "Lemon", "Pineapple", "Apple", "Banana", "Orange"]
     
+    let nameToImageMapping: [String:String] = ["Apple": "appleImages",
+                                               "Banana": "bananaImages",
+                                               "Lemon": "lemonImages",
+                                               "Orange": "orangeImages",
+                                               "Peach": "peachImages",
+                                               "Pear": "pearImages",
+                                               "Pineapple": "pineappleImages"]
+    
+    
     
     
     
