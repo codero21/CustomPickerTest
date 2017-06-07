@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var resultLabel: UILabel!
     
+    let dataComponent1: [String] = ["Apple", "Banana", "Lemon", "Orange", "Peach", "Pear", "Pineapple"]
+    let dataComponent2: [String] = ["Banana", "Orange", "Pear", "Apple", "Pineapple", "Lemon", "Peach"]
+    let dataComponent3: [String] = ["Pear", "Peach", "Lemon", "Pineapple", "Apple", "Banana", "Orange"]
+    
+    
     
     
 
