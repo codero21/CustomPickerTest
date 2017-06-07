@@ -26,6 +26,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="u1w-Tu-68D"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="EyY-jS-zYV"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wHt-XP-A6Z"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
