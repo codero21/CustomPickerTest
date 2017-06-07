@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // MARK: Properties
+    @IBOutlet weak var pickerView: UIPickerView!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

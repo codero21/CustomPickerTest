@@ -34,6 +34,9 @@
                             <constraint firstItem="uiL-EW-4xS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vQd-wQ-s9L"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="uiL-EW-4xS" id="AUd-sH-Ok1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
