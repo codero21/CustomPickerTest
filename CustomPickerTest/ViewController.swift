@@ -40,7 +40,15 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         // Dispose of any resources that can be recreated.
     }
 
-    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if component == 0 {
+            return dataComponent1.count
+        } else if component == 1{
+            return dataComponent2.count
+        } else {
+            return dataComponent3.count
+        }
+    }
     
     
     
