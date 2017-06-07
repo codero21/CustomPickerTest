@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     // MARK: Properties
     @IBOutlet weak var pickerView: UIPickerView!
@@ -25,10 +25,7 @@ class ViewController: UIViewController {
                                                "Peach": "peachImages",
                                                "Pear": "pearImages",
                                                "Pineapple": "pineappleImages"]
-    
-    
-    
-    
+ 
     
 
     override func viewDidLoad() {
@@ -43,6 +40,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
+    
+    
 
 }
 
