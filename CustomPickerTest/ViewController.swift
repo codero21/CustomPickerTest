@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     // MARK: Properties
     @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var resultLabel: UILabel!
     
     
     

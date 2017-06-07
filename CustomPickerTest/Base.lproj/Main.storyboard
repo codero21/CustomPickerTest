@@ -31,15 +31,24 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="wHt-XP-A6Z"/>
                                 </connections>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgq-IW-IIQ">
+                                <rect key="frame" x="166" y="214" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uiL-EW-4xS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Y1D-WO-Pwa"/>
+                            <constraint firstItem="Cgq-IW-IIQ" firstAttribute="top" secondItem="uiL-EW-4xS" secondAttribute="bottom" constant="32" id="dpC-cu-VPk"/>
+                            <constraint firstItem="Cgq-IW-IIQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="heE-FK-wC5"/>
                             <constraint firstItem="uiL-EW-4xS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vQd-wQ-s9L"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="pickerView" destination="uiL-EW-4xS" id="AUd-sH-Ok1"/>
+                        <outlet property="resultLabel" destination="Cgq-IW-IIQ" id="aJm-lo-iEq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
