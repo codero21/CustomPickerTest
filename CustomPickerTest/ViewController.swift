@@ -39,6 +39,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 3
+    }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if component == 0 {
@@ -54,7 +58,34 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         return 50
     }
     
+
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        // Get the fruit name
+        var keyString: String? = nil
+        if component == 0 {
+            keyString = dataComponent1[row]
+        } else if component == 1 {
+            keyString = dataComponent2[row]
+        } else if component == 2 {
+            keyString = dataComponent3[row]
+        }
+        
+        var imageFileName: String? = nameToImageMapping[keyString!]
+        
+//        if view == nil {
+//            return UIImageView(image: UIImage(named: imageFileName!))
+//        }
+        if view == nil {
+            return UIImageView(image: UIImage(named: imageFileName!))
+        }
     
+        var imageView: UIImageView = view as! UIImageView
+        
+        imageView.image = UIImage(named: imageFileName!)
+        
+        return view!
+    
+    }
     
     
 
